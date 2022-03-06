@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHUYỂN ĐỔI TIỀN TỆ</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amout</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="giatrivao"></td>
+            <td>
+                <select name="" id="select1">
+                <option value="a">VNĐ</option>
+                <option value="b">USD</option>
+                </select> </td>
+            <td>
+                <select name=""id="select2">
+                <option value="a">VNĐ</option>
+                <option value="b">USD</option>
+                </select>
+            </td>
+            <td><button style="background-color: cornflowerblue" onclick="giatri()"> Convert</button> </td>
+        </tr>
+        <tr>
+            <td style="color: deepskyblue"> Result :0.000043878894251864855</td>
+        </tr>
+    </table>
+<script>
+    function giatri() {
+    let giatrivao = document.getElementById('giatrivao').value;
+    let select1 = document.getElementById('select1').value;
+    let select2 = document.getElementById('select2').value;
+    if (select1 == select2) {
+        alert(giatrivao);
+    }
+    if (select1 == 'a' && select2 == 'b'){
+        alert(giatrivao/23000);
+    }
+    if (select1 == 'b' && select2 == 'a'){
+        alert(giatrivao*23000);
+    }
+
+
+    }
+</script>
+
+</body>
+</html>
