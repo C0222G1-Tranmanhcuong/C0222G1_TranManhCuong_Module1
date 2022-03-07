@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG MÁY TÍNH</title>
+
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td><input type="text" id="a"></td>
+        <td><input type="text" id="b"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="phepcong();">Additon(+)</button>
+            <button type="button" onclick="pheptru();">Suctraction(-)</button>
+
+        </td>
+        <td>
+            <button type="button" onclick="phepnhan();">Multiplication(X)</button>
+            <button type="button" onclick="phepchia();">Division(/)</button>
+
+        </td>
+
+    </tr>
+</table>
+<p>Result Division:1</p>
+<script>
+    function phepcong() {
+        let pheptinh1 = parseInt(document.getElementById('a').value);
+        let pheptinh2 = parseInt(document.getElementById('b').value);
+        let tong = pheptinh1 + pheptinh2;
+        alert(tong);
+    }
+
+    function pheptru() {
+        let pheptinh1 = parseInt(document.getElementById('a').value);
+        let pheptinh2 = parseInt(document.getElementById('b').value);
+        let hieu = pheptinh1 - pheptinh2;
+        alert(hieu);
+    }
+
+    function phepnhan() {
+        let pheptinh1 = parseInt(document.getElementById('a').value);
+        let pheptinh2 = parseInt(document.getElementById('b').value);
+        let tich = pheptinh1 * pheptinh2;
+        alert(tich);
+    }
+
+    function phepchia() {
+        let pheptinh1 = parseInt(document.getElementById('a').value);
+        let pheptinh2 = parseInt(document.getElementById('b').value);
+        let thuong = pheptinh1 / pheptinh2;
+        alert(thuong);
+    }
+</script>
+
+</body>
+</html>
