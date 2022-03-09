@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP</title>
+</head>
+<body>
+<script>
+    //Bài 1:
+    // let c = prompt("Độ c");
+    // let f = ((c * 9) / 5) + 32;
+    // alert("Độ F: " + f);
+
+    //Bài 2:
+    // let m = prompt("Nhap so mét: ");
+    // let ft = m * 3.2808;
+    // alert("feet: "+ ft);
+
+
+    //Bài 3:
+    // let a = prompt("độ dài cạnh của hình vuông");
+    // let s = a * a * a * a;
+    // alert(" Diện tích hình vuông là: " + s);
+
+    //Bài 4:
+    // let a = prompt("Đô dai canh a");
+    // let b = prompt("Đô dai canh b");
+    // let s = a * b;
+    // alert("Diện tích hình chữ nhật: " + s);
+
+    //Bài 5:
+    // let a = prompt("Nhap do dai canh a");
+    // let b = prompt("Nhap do dai canh b");
+    // let s = (a*b)/2;
+    // alert("Dien tich tam giac vuong: "+ s);
+
+    //Bài 6:
+    // let a = parseInt(prompt("Nhap so a"));
+    // let b = parseInt(prompt("Nhap so b"));
+    // if (a===0 && b===0) {
+    //     alert("Phuong trinh vo so nghiem");}
+    // else if (a === 0 && b !== 0) {
+    //         alert("Phuong trinh vo nghiem");
+    //     } else if (a !== 0) {
+    //         let x = -b / a;
+    //         alert("Phuong trinh co nghiem la: " + x);
+    //     }
+
+    //Bài 7 :
+    // let a = parseFloat(prompt("Nhap so a"));
+    // let b = parseFloat(prompt("Nhap so b"));
+    // let c = parseFloat(prompt("Nhap so c"));
+    // let del = (b*b)-(4*a*c);
+    // if (del < 0) {
+    //     alert("Phuong trinh vo nghiem");
+    // } else if (del === 0) {
+    //     let x = -b/(2*a);
+    //     alert("Phuong trinh co nghiem kep x1=x2= " + x);
+    // }else if (del>0){
+    //     let x1 = (-b + Math.sqrt(del))/2/a;
+    //     let x2 = (-b - Math.sqrt(del))/2/a;
+    //     alert(" Phương trinh co nghiem x1: " +x1);
+    //     alert(" Phuong trinh co nghiem x2: "+ x2);
+    // }
+
+    //Bài 8:
+    // let t = parseInt(prompt(" Nhap so: "));
+    // if (t>0 && t <=120){
+    //     alert("Đây là tuổi của một người")
+    //
+    // }
+
+    // Bài 9:
+    let a = parseInt(prompt("nhap so a"));
+    let b = parseInt(prompt("nhap so b"));
+    let c = parseInt(prompt("nhap so c"));
+    if (a < 0 && b < 0 && c < 0) {
+        alert(" Ba so nay khong phai la canh cua mot tam giac");
+    } else if (a + b > c && b + c > a && a + c > b) {
+        alert(" Ba so nay la cac canh cua mot tam giac");
+    }else alert(" Khong phai la canh cua mot tam giac");
+
+</script>
+</body>
+</html>

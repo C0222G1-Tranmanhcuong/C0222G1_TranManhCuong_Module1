@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH HOA HỒNG NHẬN ĐƯỢC TỪ DOANH SỐ BÁN HÀNG</title>
+</head>
+<body>
+<script>
+    let doanhso = parseInt(prompt("Nhap doanh so ban hang cua ban: "));
+    if ( doanhso > 5000) {
+        let hoahong = doanhso * 0.3;
+        alert("Hoa hồng của bạn: "+ hoahong);
+    } else if (doanhso === 5000) {
+        let hoahong = doanhso * 0.2;
+        alert("Hoa hồng của bạn: "+ hoahong);
+    } else if (doanhso < 5000) {
+        let hoahong = doanhso * 0.1;
+        alert("Hoa hồng của bạn: "+ hoahong);
+    }
+</script>
+
+</body>
+</html>
