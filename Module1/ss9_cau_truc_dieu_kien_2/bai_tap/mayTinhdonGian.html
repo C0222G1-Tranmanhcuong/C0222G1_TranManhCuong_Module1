@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MÁY TÍNH ĐƠN GIẢN</title>
+</head>
+<body>
+<table style="background-color: gray">
+    <tr>
+        <td colspan="4">
+        <input type="text" id="input" readonly><br>
+        </td>
+    </tr>
+    <tr>
+    </tr>
+    <td><input type="button" value="1" id="1" onclick="bam('1')"></td>
+    <td><input type="button" value="2" id="2" onclick="bam('2')"></td>
+    <td><input type="button" value="3" id="3" onclick="bam('3')"></td>
+    <td style="background-color: orange"><input type="button" value="+" id="add" onclick="bam('+')"></td>
+    <tr>
+        <td><input type="button" value="4" id="4" onclick="bam('4')"></td>
+        <td><input type="button" value="5" id="5" onclick="bam('5')"></td>
+        <td><input type="button" value="6" id="6" onclick="bam('6')"></td>
+        <td style="background-color: orange"><input type="button" value="-" id="ad" onclick="bam('-')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" id="7" onclick="bam('7')"></td>
+        <td><input type="button" value="8" id="8" onclick="bam('8')"></td>
+        <td><input type="button" value="9" id="9" onclick="bam('9')"></td>
+        <td style="background-color: orange"><input type="button" value="X" id="nhan" onclick="bam('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="c" id="reset" onclick="reset()"></td>
+        <td><input type="button" value="0" id="0" onclick="bam('0')"></td>
+        <td><input type="button" value="=" id="result" onclick="result()"></td>
+        <td style="background-color: orange"><input type="button" value="/" id="chia" onclick="bam('/')"></td>
+    </tr>
+</table>
+<script>
+    function bam(value) {
+        document.getElementById("input").value += value;
+    }
+    function reset() {
+    document.getElementById("input").value ="";
+    }
+    function result() {
+    let tempresult = document.getElementById("input").value;
+    document.getElementById("input").value = eval(tempresult);
+    }
+</script>
+
+</body>
+</html>
