@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUYỆN TẬP CẤU TRÚC IF,IF...ELSE,IF LỒNG NHAU</title>
+</head>
+<body>
+<script>
+    let diemkt = parseInt(prompt("Nhập điểm kiểm tra: "));
+    let diemgk = parseInt(prompt("Nhập điểm giữa kì: "));
+    let diemck = parseInt(prompt("Nhập điểm cuối kì: "));
+    let total = diemkt + diemgk + diemck;
+    if (total >= 8.0) {
+        alert(" Học lực giỏi");
+    } else if (total>=7.5) {
+        alert("học lực khá");
+    }else  if (total >= 5.0) {
+        alert("học lực trung bình");
+    } else {
+        alert(" học lực yếu");
+    }
+</script>
+</body>
+</html>
