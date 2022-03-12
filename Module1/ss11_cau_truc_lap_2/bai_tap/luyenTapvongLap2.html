@@ -80,15 +80,15 @@
     // }
 
     //Bài 5:
-    //
-    // let n = prompt("Nhập số tiền vay");
-    // let tienlai;
-    // let tiencon;
-    // tiencon=n;                               // bài chưa ra kq đúng,
-    // for (let i=1;i<=12;i++){
-    //     tienlai = tiencon * 0.05;
-    //     tiencon = tiencon-n;
-    // }alert("tiền lãi hàng tháng là "+ tienlai);
+
+    let tienvay = 12000000;
+    let sothang = 12;
+    let tiensau=tienvay;                    // bài chưa ra kq đúng,
+    for (let i=1;i<=12;i++){
+            tienlai= tiensau*0.05;
+          tiensau += tienlai;
+           document.write(tienlai);
+    }
 
 
 
