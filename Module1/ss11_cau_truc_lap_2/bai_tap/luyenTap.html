@@ -5,7 +5,7 @@
     <title>Luyện tập vòng lặp</title>
 </head>
 <body>
-<button onclick="play()">Bắt đầu</button>
+<!--<button onclick="play()">Bắt đầu</button>-->
 <script>
     //Bài 1:
     // let i = 1;
@@ -19,14 +19,19 @@
 
     //Bài2 :
     // let a = prompt(" Nhập nhiệt độn hiện tại: ");
-    // while (a>100 || a<20)
+    // while (a>0)
     // {
-    // if(a>100){
-    //     alert("Giảm nhiệt độ");
-    // }else if (a<20){
+    // if(a<=20){
     //     alert("Tăng nhiệt độ");
+    //     break;
+    // }else if (a>=100){
+    //     alert("Giảm nhiệt độ");
+    //     break;
+    // } else(a>= 20||a<=100)
+    //     alert("Nhiệt độ vừa đủ ");
+    // break;
     // }
-    // }
+
 
 
     // // Bài 3:
@@ -67,14 +72,14 @@
     // let i=1;
     // let sum = 0;
     // while(i<=cout) {
-    //     //console.log(n);
+    //     console.log(n);
     //     t = n + m;
     //     sum += t;
     //     n = m;
     //     m = t;
     //     i++;
     // }
-    // console.log("Tổng của 20 số đầu tiên là " +sum)
+    // console.log("Tổng của 20 số đầu tiên là " +sum);
 
     //Bài 6:Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
     // let s = 0;
@@ -99,28 +104,28 @@
     // }
     // }
 
-    //Bài 8:
-    function play(){
-    let num1 = parseInt(prompt("Bạn muốn bắt đầu từ số: "));
-    let num2 = parseInt(prompt("Bạn muốn kết thúc ở số: "));
-    let sobimat = Math.floor(Math.random() * num2-num1)+num1;
-    let i = 1;
-    let doan = null;
-    do {
-        doan = parseInt(prompt("Mời bạn đoán số: "));
-        if(doan<sobimat){
-            alert("Bạn nên nhập số lớn hơn! ");
-        }else if (doan>sobimat){
-            alert("Bạn nên nhập số nhỏ hơn! ")
-        }
-        i++;
-    } while (doan!=sobimat && i<4)
-    if (doan===sobimat){
-        alert("Chúc mừng bạn đã đoán đúng");
-    }else {
-        alert("Sai rồi!");
-    }
-    }
+    //Bài 8: //mở thẻ button phía trên.
+    // function play(){
+    // let num1 = parseInt(prompt("Bạn muốn bắt đầu từ số: "));
+    // let num2 = parseInt(prompt("Bạn muốn kết thúc ở số: "));
+    // let sobimat = Math.floor(Math.random() * num2-num1)+num1;
+    // let i = 1;
+    // let doan = null;
+    // do {
+    //     doan = parseInt(prompt("Mời bạn đoán số: "));
+    //     if(doan<sobimat){
+    //         alert("Bạn nên nhập số lớn hơn! ");
+    //     }else if (doan>sobimat){
+    //         alert("Bạn nên nhập số nhỏ hơn! ")
+    //     }
+    //     i++;
+    // } while (doan!=sobimat && i<4)
+    // if (doan===sobimat){
+    //     alert("Chúc mừng bạn đã đoán đúng");
+    // }else {
+    //     alert("Bạn hết lượt chơi!");
+    // }
+    // }
 
 </script>
 </body>
