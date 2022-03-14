@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỪ ĐIỂN</title>
+</head>
+<body>
+<form>
+    <h2>Từ điển Anh-Việt</h2>
+    <input type="text" id="value" placeholder="Nhập từ cần tìm">
+    <button onclick="timkiem()"> Translate</button>
+</form>
+<script>
+    let english = ['pen', 'ruler', 'pencil', 'eraser'];
+    let vietnam = ['Cây bút', 'Thước', 'Bút chì', 'Cục tẩy'];
+
+    function timkiem() {
+        let search = document.getElementById("value").value
+        let newsearch = search.toLowerCase();
+        for (i = 0; i < english.length; i++) {
+            if (english.indexOf(newsearch) !== -1) {
+                alert(vietnam[english.indexOf(newsearch)])
+            } else {
+                alert("Không có trong từ điển!")
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÌM GIÁ TRỊ LỚN NHẤT</title>
+</head>
+<body>
+<script>
+    let n = [6, 76, 4, 65, 23, 433, 67, 98, 11, 21];
+    let max = n[0];
+    let index = 0;
+    for (i = 1; i < n.length; i++) {
+        if (n[i] > max) {
+            max = n[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>
