@@ -18,20 +18,17 @@
 
 
     //Bài2 :
-    // let a = prompt(" Nhập nhiệt độn hiện tại: ");
-    // while (a>0)
-    // {
-    // if(a<=20){
-    //     alert("Tăng nhiệt độ");
-    //     break;
-    // }else if (a>=100){
-    //     alert("Giảm nhiệt độ");
-    //     break;
-    // } else(a>= 20||a<=100)
-    //     alert("Nhiệt độ vừa đủ ");
-    // break;
-    // }
+    let a = prompt(" Nhập nhiệt độn hiện tại: ");
+    while (a < 20 || a > 100) {
+        if (a < 20) {
+            alert("Tăng nhiệt độ");
+        } else if (a > 100) {
+            alert("Giảm nhiệt độ");
+        }
+        a = prompt("Nhập lại nhiệt độ: ");
 
+    }
+    alert("Nhiệt độ vừa đủ ");
 
 
     // // Bài 3:
