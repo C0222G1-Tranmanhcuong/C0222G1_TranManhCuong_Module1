@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập chuỗi a');
+    let b = prompt('nhập chuỗi b');
+    if (a.length !== b.length) {
+        alert("Hai mảng không giống nhau");
+    } else {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === b[i]) {
+                alert("Hai mảng giống nhau");
+            } else {
+                alert("Hai mảng không giống nhau");
+                break;
+            }
+
+        }
+    }
+    //cách 2: đúng nhưng hơi dài dòng.
+    // let A = a.split(" ");
+    // let B = b.split(" ");
+
+    // } else if (c === d) {
+    //     for (let i = 0; i < A.length; i++) {
+    //         if (A[i] === B[i]) {
+    //             alert('Giống nhau')
+    //             break
+    //         } else {
+    //             alert('Không giống nhau')
+    //             break
+    //
+    //         }
+    //     }
+    // }
+</script>
+</body>
+</html>

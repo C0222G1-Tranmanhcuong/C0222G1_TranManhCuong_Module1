@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const numbers = [3, 54, 21, 13, 7, 9, 45, 28, 90, 16];
+    let V = parseInt(prompt('Nhập một số'));
+    let i;
+    check = 0;
+    for (i = 0; i < numbers.length; i++) {
+        if (V === numbers[i]) {
+            numbers.splice(i, 1);
+            document.write("V is in the array" + "<br>")
+            check++;
+        } else if (i === numbers.length - 1 && check === 0) {
+            document.write("V is not in the array")
+        }
+    }
+    document.write(numbers)
+
+</script>
+</body>
+</html>

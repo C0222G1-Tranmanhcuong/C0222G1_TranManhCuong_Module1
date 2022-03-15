@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-    //chưa hoàn thành
-    let n = [2,5,7,40,12,9];
+
+    const numbers = [3,54,21,13,7,9,45,28,90,16];
+    let V = parseInt(prompt('Nhập một số'));
     let i;
-    let V = parseInt(prompt("nhập một số"));
-    for (i=1;i<n.length;i++){
-        if (V===n[i]){
-            alert("V is in the array");
+    for (i= 0; i < numbers.length; i++){
+        if(V === numbers[i]){
+            console.log('V is in the array');
             break;
-        }else {
-            alert("V is not in the array");
+        }
+        else if (i === numbers.length - 1){
+            console.log('V is not in the array');
         }
     }
 </script>
