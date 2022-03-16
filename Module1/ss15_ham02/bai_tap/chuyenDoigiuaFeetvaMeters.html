@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập vào đây" id="input">
+<button type="button" onclick="footToMeter()" value="F - M"> F-M</button>
+<button type="button" onclick="meterToFoot()" value="M - F"> M-F</button>
+<p id="output"> Result : </p>
+
+<script>
+    function footToMeter() {
+        let foot1 = parseInt(document.getElementById("input").value);
+
+        document.getElementById("output").innerHTML = (foot1 * 0.305) + 'Meter';
+    }
+
+
+    function meterToFoot() {
+        let meter1 = parseInt(document.getElementById("input").value);
+        document.getElementById("output").innerHTML = (meter1 * 3.279) + " Foot";
+
+    }
+
+</script>
+
+</body>
+</html>
