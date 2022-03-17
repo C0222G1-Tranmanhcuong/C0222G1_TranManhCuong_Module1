@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó-->
+<script>
+
+    function reverse(array) {
+        let first = 0;
+        let last = array.length - 1;
+        while (first < last) {
+            let a = array[first];
+            array[first] = array[last];
+            array[last] = a;
+            first++;
+            last--;
+        }
+        return array;
+    }
+
+    let array1 = new Array(5);
+    for (let i = 0; i < array1.length; i++) {
+        array1[i] = prompt('Input array [' + i + ']: ');
+    }
+    document.write(array1 + "<br>");
+    document.write("Hàm đảo ngược :" + "<br>" + reverse(array1));
+</script>
+</body>
+</html>

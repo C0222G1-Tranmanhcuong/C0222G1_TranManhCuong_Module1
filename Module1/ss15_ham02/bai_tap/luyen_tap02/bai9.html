@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. -->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<script>
+    function find(arr1, sym) {
+        let count = 0;
+        for (i = 0; i < arr1.length; i++) {
+            if (arr1[i] === sym) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+
+    let str = 'e';
+    let arr = ['a', 'b', 'e', 'c', 'd', 'e', 'f', 'g', 'h', 'e', '4', '7', '8', 'e'];
+    document.write(" Số lần xuất hiện là" + find(arr, str));
+</script>
+</body>
+</html>

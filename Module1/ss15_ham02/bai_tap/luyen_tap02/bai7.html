@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    function change(num1, num2) {
+    let a=[];
+        a.push(num1);
+        a.push(num2);
+        return a.reverse();
+    }
+    let num1 = parseFloat(prompt("nhập 1 "));
+    let num2 = parseFloat(prompt("nhập 2 "));
+    document.write(num1+" "+num2+"<br>");
+    document.write(change(num1,num2));
+</script>
+</body>
+</html>

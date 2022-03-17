@@ -11,14 +11,20 @@
     if (a.length !== b.length) {
         alert("Hai mảng không giống nhau");
     } else {
+        let check = false;
         for (let i = 0; i < a.length; i++) {
-            if (a[i] === b[i]) {
-                alert("Hai mảng giống nhau");
-            } else {
-                alert("Hai mảng không giống nhau");
+            if (a[i] !== b[i]) {
+                check = false;
                 break;
+            } else {
+                check = true;
             }
 
+        }
+        if (check === true) {
+            alert("Hai mảng giống nhau");
+        } else if (check === false) {
+            alert("Hai mảng không giống nhau");
         }
     }
     //cách 2: đúng nhưng hơi dài dòng.

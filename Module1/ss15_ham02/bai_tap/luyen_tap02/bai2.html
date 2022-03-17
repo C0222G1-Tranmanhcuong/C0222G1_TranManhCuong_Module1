@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<script>
+    function cvCircle(number){
+       let pi = 3.14;
+        cv = number *2 * pi;
+        return cv;
+    }
+    function sCircle(number) {
+       let pi = 3.14;
+        s = number*number*pi;
+        return s;
+    }
+    let radius = parseFloat(prompt("Nhập bán kính: "))
+    document.write("Chu vi hinh tròn là : "+cvCircle(radius)+"<br>");
+    document.write("Diện tích hình tròn là : "+sCircle(radius));
+</script>
+</body>
+</html>
