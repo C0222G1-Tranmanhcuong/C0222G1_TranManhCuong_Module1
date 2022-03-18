@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   class Temperature{
+       constructor(celsius) {
+           this.celsius = celsius;
+       }
+       CtoF(){
+           console.log(this.celsius*9 / 5 + 32);
+   }
+   CtoK(){
+           if (this.celsius > (-273)) {
+               console.log(this.celsius + 273.15);
+           }
+           else {
+               console.log("Bạn đã nhập sai giá trị của độ c")
+           }
+
+   }
+
+   }
+   let Temperature1 = new Temperature(25);
+   Temperature1.CtoF();
+   Temperature1.CtoK();
+
+</script>
+</body>
+</html>
