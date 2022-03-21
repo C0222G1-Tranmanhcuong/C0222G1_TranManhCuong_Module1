@@ -7,21 +7,25 @@
 <body>
 <form>
 
-<script>
-    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
-    let Constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
-    function myLibrary(starname) {
-        for (i=0; i<=star.length;i++){
-            if (starname===star[i]) {
-                star[i] === Constellation[i];
-                return Constellation[i];
+    <script>
+        let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let Constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+        function myLibrary(starname) {
+            for (i = 0; i < star.length; i++) {
+                if (starname === star[i]) {
+                    star[i] === Constellation[i];
+                    return Constellation[i];
+                }
             }
-        }return (" Không có trong mảng sao!");
+            return (" Không có trong mảng sao!");
 
 
-    }let starsName1 = prompt("Tên ngôi sao ? ");
-    document.write(myLibrary(starsName1));
+        }
 
-</script>
+        let starsName1 = prompt("Tên ngôi sao ? ");
+        document.write(myLibrary(starsName1));
+
+    </script>
 </body>
 </html>

@@ -6,27 +6,29 @@
 </head>
 <body>
 <script>
-   class Temperature{
-       constructor(celsius) {
-           this.celsius = celsius;
-       }
-       CtoF(){
-           console.log(this.celsius*9 / 5 + 32);
-   }
-   CtoK(){
-           if (this.celsius > (-273)) {
-               console.log(this.celsius + 273.15);
-           }
-           else {
-               console.log("Bạn đã nhập sai giá trị của độ c")
-           }
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
 
-   }
+        cSangf() {
+            console.log(this.celsius * 9 / 5 + 32);
+        }
 
-   }
-   let Temperature1 = new Temperature(25);
-   Temperature1.CtoF();
-   Temperature1.CtoK();
+        cSangk() {
+            if (this.celsius > (-273)) {
+                console.log(this.celsius + 273.15);
+            } else {
+                console.log("Bạn đã nhập sai giá trị của độ c")
+            }
+
+        }
+
+    }
+
+    let Temperature1 = new Temperature(25);
+    Temperature1.cSangf();
+    Temperature1.cSangk();
 
 </script>
 </body>
