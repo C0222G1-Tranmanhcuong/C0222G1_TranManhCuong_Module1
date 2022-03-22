@@ -17,15 +17,64 @@
     //     Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].
     //     Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6]
 
-    let a = new Array(5);
-    let b = new Array(5);
-    for (let i = 0;i<a.length;i++){
-        a[i] = prompt('Input a['+i+']:');
-    }
-    for( let j= 1; j <=b.length;j++){
-        
+    // let a = [1,2,3,4,5];
+    // let b = [];
+    // let prefix = 0;
+    // for (let i = 0; i<= a.length; i++){
+    //     prefix += a[i];
+    //     b.push(prefix)
+    // } console.log(b);
+    //Bai2: Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A
+    // Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
+    let a = [1,2,3,4,5];
+    let b = [1,2,3,9,7,6,4,5];
+    let c = [];
+    // for (i=0; i <b.length;i++){
+    //     if (!a.includes(b[i])){
+    //         c.push(b[i]);
+    //     }
+    // }console.log(c);
+    for ( i=0; i<b.length;i++){
+       if (a.indexOf(b[i])!==-1|| c.indexOf(b[i])!== -1){
+           // c.push(b[i]);
+       }
+       c.push(b[i]);
+    }console.log(c);
 
-    }
+    //Bài3: Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)
+    // Giả định rằng không có các phân số bằng nhau trong tập đầu vào.
+    // let tuso = [5, 2, 5, 6, 5,];
+    // let mauso = [6, 3, 2, 4, 4];
+    // let b = [];
+    // for (let i = 0; i < tuso.length; i++) {
+    //     b.push(tuso[i] / mauso[i]);
+    // }
+    // let max = b[0];
+    // let index;
+    // for (let j = 1; j < b.length; j++) {
+    //     if (max < b[j]) {
+    //         max = b[j];
+    //         index = j;
+    //     }
+    // }
+    // console.log(tuso[index] + '/' + mauso[index] + " vitri " + index);
+    //Bài4:: Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
+    // Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.
+
+    //Bài 5: Tạo Menu:
+    // let price = [1000, 2000, 3000, 4000, 5000, 6000];
+    // let b = prompt('Danh sách nước uống' + '\n' + '1.Cafe' + '\n' + '2.Cam vắt' + ' \n' + '3.Nước ép cà rốt' + '\n'
+    //     + '4.Nước ép cà chua' + '\n' + '5.Nước lọc' + '\n' + '6.Nước dừa');
+    // let amount = prompt(" Số lượng muốn mua");
+    // function myFunction() {
+    // while (true){
+    //     for (let i = 0; i < price.length; i++) {
+    //         alert(" Bạn đã chọn sản phẩm " + b + " có giá là : " + price[b - 1] + "Vnd."
+    //             + " Tổng tiền phải trả là : " + amount * (price[b - 1]) + ' Vnd');
+    //
+    //     }
+    // }}
+
 </script>
 </body>
 </html>
