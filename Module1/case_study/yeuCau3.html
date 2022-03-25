@@ -5,6 +5,58 @@
     <title>MẢNG VÀ LOOP</title>
 </head>
 <body>
+<table border="1" style="background-color: azure">
+    <tr style=>
+        <th>MENU</th>
+        <th>Giá sản phẩm</th>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>
+            Cafe
+        </td>
+        <td style="text-align: center">
+            7000$
+        </td>
+    </tr>
+    <tr>
+        <td>Cam vắt</td>
+        <td style="text-align: center">
+            9000$
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nước ép ổi
+        </td>
+        <td style="text-align: center">10000$</td>
+    </tr>
+    <tr>
+        <td>
+            Nước ép cà chua
+        </td>
+        <td style="text-align: center">
+            12000$
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nước lọc
+        </td>
+        <td style="text-align: center">5000$</td>
+    </tr>
+    <tr>
+        <td>
+            Nước dừa
+        </td>
+        <td style="text-align: center">15000$</td>
+    </tr>
+    <tr>
+        <td>Nhấn phím 7 để thanh toán</td>
+    </tr>
+</table><br>
+<input type="button" onclick="menu()" value="Mời quý khách Oder" style="background-color: beige">
+<p id="output"> </p>
 <script>
     // //Bài 1 :Cho mảng a chỉ chứa các số nguyên
     // Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
@@ -24,23 +76,18 @@
     //     prefix += a[i];
     //     b.push(prefix)
     // } console.log(b);
+
+
     //Bai2: Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A
     // Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
-    let a = [1,2,3,4,5];
-    let b = [1,2,3,9,7,6,4,5];
-    let c = [];
-    // for (i=0; i <b.length;i++){
-    //     if (!a.includes(b[i])){
-    //         c.push(b[i]);
-    //     }
-    // }console.log(c);
-    for ( i=0; i<b.length;i++){
-       if (a.indexOf(b[i])!==-1|| c.indexOf(b[i])!== -1){
-           // c.push(b[i]);
-       }
-       c.push(b[i]);
-    }console.log(c);
-
+    // let a = [1,2,3,4,5];
+    // let b = [1,2,3,9,7,6,4,5];
+    // let c = [];
+    // for ( i=0; i<b.length;i++) {
+    //     if (a.indexOf(b[i]) !== -1 || (c.indexOf(b[i]) !== -1)) {
+    //        continue;
+    //     }c.push(b[i]);
+    // }document.write(c);
     //Bài3: Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)
     // Giả định rằng không có các phân số bằng nhau trong tập đầu vào.
     // let tuso = [5, 2, 5, 6, 5,];
@@ -60,21 +107,68 @@
     // console.log(tuso[index] + '/' + mauso[index] + " vitri " + index);
     //Bài4:: Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
     // Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.
+    // let n = prompt("Enter the number: ");
+    // let a = [];
+    // let b = [];
+    // a = n.split("");
+    // for (let i = 0; i < a.length; i++) {
+    //     switch (a[i]) {
+    //         case "0":
+    //             b[i] = "Không ";
+    //             break;
+    //         case "1":
+    //             b[i] = "Một ";
+    //             break;
+    //         case "2":
+    //             b[i] = "Hai ";
+    //             break;
+    //         case "3":
+    //             b[i] = "Ba ";
+    //             break;
+    //         case "4":
+    //             b[i] = "Bốn ";
+    //             break;
+    //         case "5":
+    //             b[i] = "Năm";
+    //             break;
+    //         case "6":
+    //             b[i] = "Sáu";
+    //             break;
+    //         case "7":
+    //             b[i] = "Bảy";
+    //             break;
+    //         case "8":
+    //             b[i] = "Tám";
+    //             break;
+    //         case "9":
+    //             b[i] = "(Chín)";
+    //             break;
+    //     }
+    // }
+    // document.write(a + "<br>");
+    // document.write(b);
+
 
     //Bài 5: Tạo Menu:
-    // let price = [1000, 2000, 3000, 4000, 5000, 6000];
-    // let b = prompt('Danh sách nước uống' + '\n' + '1.Cafe' + '\n' + '2.Cam vắt' + ' \n' + '3.Nước ép cà rốt' + '\n'
-    //     + '4.Nước ép cà chua' + '\n' + '5.Nước lọc' + '\n' + '6.Nước dừa');
-    // let amount = prompt(" Số lượng muốn mua");
-    // function myFunction() {
-    // while (true){
-    //     for (let i = 0; i < price.length; i++) {
-    //         alert(" Bạn đã chọn sản phẩm " + b + " có giá là : " + price[b - 1] + "Vnd."
-    //             + " Tổng tiền phải trả là : " + amount * (price[b - 1]) + ' Vnd');
-    //
-    //     }
-    // }}
-
+    function menu() {
+        let arr = [7000, 9000, 10000, 12000, 5000, 15000];
+        let total = 0;
+        while (true){
+            let a = parseInt(prompt("Nhập sản phẩm"));
+            a--;
+            if (a>=0 && a<6){
+                let b = parseInt(prompt("Nhập số lượng"));
+                total += arr[a]* b;
+            } else if (a===6){
+                alert("Cảm ơn quý khách");
+                break;
+            }
+            else {
+                alert("Không có trong menu");
+            }
+        }
+    document.getElementById("output").innerHTML = "Tổng tiền quý khách phải trả là: " + total + "$"+".";
+    }
 </script>
 </body>
 </html>
